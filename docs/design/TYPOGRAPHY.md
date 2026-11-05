@@ -1,8 +1,8 @@
 # Typography
 
-- Base font: use a fast system stack initially; self-host a properly licensed Thai-capable font when approved.
-- Use `font-display: swap` or another documented font-loading strategy if custom fonts are adopted.
-- Fluid heading sizes with `clamp()`, no text rendered as images for meaningful copy.
-- Base body `1rem`, line-height around `1.65` for Thai/English readability; avoid excessively long paragraph widths.
-- H1 is the primary editorial heading; H2/H3 follow content hierarchy, not typography-size convenience.
-- In mobile viewport widths 320–390 px, check Thai word wrapping, line height and button overflow.
+- Base stack: Arial/Helvetica/system UI for fast rendering and a neutral grotesk character; no unlicensed web font is loaded.
+- Display headings are fluid with `clamp()`, tight line-height (`.84–.95`) and negative tracking. Meaningful copy is never rendered inside WebGL or as an image.
+- Body copy remains at least `1rem`, with line-height around `1.55` and constrained line length.
+- H1 is the primary editorial heading; H2/H3 follow content hierarchy rather than visual size.
+- Labels use small uppercase type with increased letter spacing; they do not replace descriptive headings.
+- At 320–390px, headings use viewport-relative clamps and sections collapse to one column without horizontal overflow.

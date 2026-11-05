@@ -4,7 +4,9 @@ import { join } from 'node:path';
 const outputRoot = join(process.cwd(), 'out');
 const checks = [
   { file: 'index.html', h1: true },
+  { file: 'about/index.html', h1: true },
   { file: 'services/index.html', h1: true },
+  { file: 'work/index.html', h1: true },
 ];
 let failures = 0;
 

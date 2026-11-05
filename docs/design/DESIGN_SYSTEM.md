@@ -1,27 +1,37 @@
-# Design System — Markdown Source of Design Intent
+# Design System — Emotion Cinematic Direction
 
 Update this file **and** `src/styles/tokens.css` whenever design tokens change.
 
 ## Brand style
-- Visual direction: modern, minimal, typography-led, high contrast, spacious.
-- Sample interface language: English (`lang="en"`) because the starter copy is English. Change both content and `src/config/site.ts` to `th` / `th_TH` if publishing in Thai.
-- Do not overuse animation; enhance perceived quality without increasing time to meaningful content.
+- Visual direction: cinematic, dark, typography-led, high contrast and intentionally oversized.
+- Primary surfaces use near-black with warm cream text. Acid green signals action; violet supports atmospheric depth.
+- Layout alternates immersive dark scenes with high-contrast cream and acid sections.
+- Procedural visuals replace unlicensed photography. Meaningful text remains HTML, never canvas or an image.
+- English is the published interface language (`lang="en"`).
 
 ## Design tokens
-| Token | Intent | Starter value |
+| Token | Intent | Value |
 |---|---|---|
-| `--color-bg` | Primary background | `#fbfaf7` |
-| `--color-text` | Primary text | `#17212b` |
-| `--color-muted` | Supporting text | `#576574` |
-| `--color-accent` | Brand accent | `#245edb` |
-| `--color-border` | Light separators | `#dce1e6` |
-| `--content-max` | Large content width | `72rem` |
-| `--radius-card` | Cards | `1rem` |
-| `--space-section` | Fluid section spacing | `clamp(4rem, 7vw, 7rem)` |
+| `--color-bg` | Near-black primary background | `#0a0a0c` |
+| `--color-surface` | Dark raised surface | `#151519` |
+| `--color-elevated` | Interactive dark surface | `#202027` |
+| `--color-text` | Warm primary text | `#f2efe6` |
+| `--color-muted` | Supporting text | `#aaa79f` |
+| `--color-accent` | Acid action color | `#c7ff29` |
+| `--color-accent-secondary` | Atmospheric violet | `#6b42ff` |
+| `--color-border` | Dark separators | `#34343b` |
+| `--color-cream` | Light editorial surface | `#f2efe6` |
+| `--color-ink` | Text on light/accent surfaces | `#111115` |
+| `--content-max` | Large cinematic content width | `90rem` |
+| `--radius-card` | Restrained visual corner | `.35rem` |
+| `--space-section` | Fluid section spacing | `clamp(6rem, 11vw, 11rem)` |
+| `--gutter` | Fluid viewport gutter | `clamp(1rem, 3vw, 3rem)` |
 
 ## Component design principles
-- One core component purpose per file.
-- No inline hard-coded colors when a design token exists.
-- Preserve comfortable reading width and obvious interactive affordances.
-- Prefer CSS responsive features over JS viewport detection.
-- For a new brand, revise the Markdown first; then implement and visually verify the token changes.
+- Large typography sets hierarchy; avoid decorative card chrome where editorial rules suffice.
+- Alternate asymmetric layouts, edge-to-edge visual fields and precise separators.
+- Keep interactive affordances visible through underline, contrast and focus rings, not motion alone.
+- Use CSS Modules and tokens; no inline hard-coded brand colors where a token exists.
+- WebGL and pointer treatments are decorative progressive enhancement. CSS provides the complete fallback.
+- The 3D scene uses original procedural Three.js geometry only; no reference-site models, textures or shaders are copied.
+- Preserve comfortable paragraph measure even when headings are oversized.

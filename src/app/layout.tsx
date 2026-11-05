@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { siteConfig } from '@/config/site';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { MotionEnhancer } from '@/components/interactive/MotionEnhancer';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang={siteConfig.language}>
       <body>
+        <MotionEnhancer />
         <a className="skip-link" href="#main-content">Skip to main content</a>
         <Header />
         {children}

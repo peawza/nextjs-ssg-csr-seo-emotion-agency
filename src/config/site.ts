@@ -1,9 +1,10 @@
-/** Replace these sample values before deploying to a public domain. */
+/** Site-wide configuration for the Emotion marketing website. */
 export const siteConfig = {
-  name: 'Example Studio',
-  description: 'Modern, accessible websites built with performance and search visibility in mind.',
-  url: 'https://example.com',
-  email: 'hello@example.com',
+  name: 'Emotion',
+  description:
+    'Emotion is a design and engineering studio crafting award-winning websites and digital products — interfaces people remember.',
+  url: 'https://emotion-agency.com',
+  email: 'hello@emotion-agency.com',
   locale: 'en_US',
   language: 'en',
 } as const;

@@ -1,12 +1,17 @@
 :root {
-  --color-bg: #fbfaf7;
-  --color-surface: #ffffff;
-  --color-text: #17212b;
-  --color-muted: #576574;
-  --color-accent: #245edb;
-  --color-accent-text: #ffffff;
-  --color-border: #dce1e6;
-  --content-max: 72rem;
-  --radius-card: 1rem;
-  --space-section: clamp(4rem, 7vw, 7rem);
+  --color-bg: #0a0a0c;
+  --color-surface: #151519;
+  --color-elevated: #202027;
+  --color-text: #f2efe6;
+  --color-muted: #aaa79f;
+  --color-accent: #c7ff29;
+  --color-accent-secondary: #6b42ff;
+  --color-accent-text: #0a0a0c;
+  --color-border: #34343b;
+  --color-cream: #f2efe6;
+  --color-ink: #111115;
+  --content-max: 90rem;
+  --radius-card: .35rem;
+  --space-section: clamp(6rem, 11vw, 11rem);
+  --gutter: clamp(1rem, 3vw, 3rem);
 }

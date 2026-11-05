@@ -9,6 +9,9 @@ export default function HomePage() {
     '@type': 'Organization',
     name: siteConfig.name,
     url: siteConfig.url,
+    description: siteConfig.description,
+    email: siteConfig.email,
+    foundingDate: '2018',
   };
 
   return (
